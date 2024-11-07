@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    font-weight: bolder;
+  }
+  
+  body{
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://media.istockphoto.com/id/1486667052/vector/xoxo-colorful-seamless-pattern.jpg?s=612x612&w=0&k=20&c=WX1KDJDQc3ZQeHPzcjea_81gZbE0YcQkBcoX3P-8V2U=");
+    color:rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .container{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    background-color: rgb(2, 2, 2);
+  }
+  
+  .box{
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 0 2px #fdfcfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 55px;
+  }
+  body span{
+    font-size: 45px;
+    background-color: black;
+  }
+  body h4{
+    font-size: 30px;
+    background-color: black;
+  }
+  
+  #status{
+    padding: 20px;
+    font-size: 50px;
+    font-weight: 500;
+    background-color: black;
+  }
+  
+  button{
+    width: 150px;
+    height: 40px;
+    font-size: 18px;
+    color:white;
+    background-color: #ff4757;
+    border: none;
+    border-radius: 3px;
+  }
+  button:hover{
+    color: white;
+    background-color: black;
+    box-shadow: 0px 0px 10px white;
+    transition: .5s;
+    transform: scale(1.1);
+  }
+  
+  .win{
+      animation: winAnimation ease-in-out 1s infinite;
+  }
+  
+  @keyframes winAnimation {
+    0%{background-color: rgb(71, 116, 116);}
+    100%{text-decoration: line-through;}
+  }
